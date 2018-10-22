@@ -1,0 +1,52 @@
+"state","unemp_rate","unemp_rank"
+"Hawaii",2.2,1
+"Iowa",2.5,2
+"Idaho",2.7,3
+"New Hampshire",2.7,3
+"North Dakota",2.7,3
+"Minnesota",2.8,6
+"Nebraska",2.8,6
+"Vermont",2.9,8
+"Virginia",2.9,8
+"South Dakota",3,10
+"Wisconsin",3,10
+"Colorado",3.1,12
+"Missouri",3.2,13
+"Utah",3.2,13
+"Kansas",3.3,15
+"Maine",3.3,15
+"South Carolina",3.3,15
+"Arkansas",3.5,18
+"Florida",3.5,18
+"Indiana",3.5,18
+"Oklahoma",3.5,18
+"Massachusetts",3.6,22
+"Montana",3.6,22
+"Tennessee",3.6,22
+"Georgia",3.7,25
+"North Carolina",3.8,26
+"Oregon",3.8,26
+"Texas",3.8,26
+"Rhode Island",3.9,29
+"Delaware",4,30
+"Michigan",4,30
+"Alabama",4.1,32
+"California",4.1,32
+"Illinois",4.1,32
+"New York",4.1,32
+"Pennsylvania",4.1,32
+"Wyoming",4.1,32
+"Connecticut",4.2,38
+"Maryland",4.2,38
+"New Jersey",4.2,38
+"Washington",4.4,41
+"Kentucky",4.5,42
+"Nevada",4.5,42
+"New Mexico",4.6,44
+"Ohio",4.6,44
+"Arizona",4.7,46
+"Mississippi",4.8,47
+"Louisiana",5,48
+"West Virginia",5.2,49
+"District of Columbia",5.7,50
+"Alaska",6.5,51
