@@ -43,22 +43,22 @@ shinyServer(function(input, output) {
           states <- left_join(centers, states)
           return(states)
         }else if(input$dataSelector == "DC Metro Lines"){
-          dat <- readOGR("./data/Metro_Lines.geojson", stringsAsFactors = F, verbose = F)
+          dat <- geojson_read("./data/Metro_Lines.geojson", what="sp")
           dat@data$color <- gsub(" .*","", dat@data$NAME)
           return(dat)
         }else if(input$dataSelector == "State Unemployment Rate"){
-          dat <- readOGR("./data/states_geojson.geojson", "OGRGeoJSON")
+          dat <- geojson_read("./data/states_geojson.geojson", what="sp")
       
         }else if(input$dataSelector == "State Mean Annual Wages"){
-          dat <- readOGR("./data/states_geojson.geojson", "OGRGeoJSON")
+          dat <- geojson_read("./data/states_geojson.geojson", what="sp")
         }else if(input$dataSelector == "State Total Employment"){
-          dat <- readOGR("./data/states_geojson.geojson", "OGRGeoJSON")
+          dat <- geojson_read("./data/states_geojson.geojson", what="sp")
         }else if(input$dataSelector == "Maryland County Mean Weekly Wages"){
-          dat <- readOGR("./data/md_county_geojson.geojson", "OGRGeoJSON")
+          dat <- geojson_read("./data/md_county_geojson.geojson", what="sp")
         }else if(input$dataSelector == "DC Block Group Population"){
-          dat <- readOGR("./data/Census_Block_Groups__2010.geojson", "OGRGeoJSON")
+          dat <- geojson_read("./data/Census_Block_Groups__2010.geojson", what="sp")
         }else if(input$dataSelector == "DC Block Group Housing Units"){
-          DCblocks <- readOGR("./data/Census_Block_Groups__2010.geojson", "OGRGeoJSON")
+          DCblocks <- geojson_read("./data/Census_Block_Groups__2010.geojson", what="sp")
         }
   })
   
@@ -130,7 +130,7 @@ shinyServer(function(input, output) {
       pal <- colorNumeric(input$colorPalette, domain = dat@data$unemp_rate, reverse = input$reverse, na.color = "gray35")
       
       popup <-  with(dat@data,paste(sep = "",
-                                     "<img src='https://brandonkopp.com/wp-content/uploads/2017/10/BLS_emblem_2016.png' height='40px' style='vertical-align: text-bottom'>",
+                                     "<img src='https://www.bls.gov/images/bls_emblem_2016.png' height='40px' style='vertical-align: text-bottom'>",
                                      "<b style='font-size:2em;line-height:40px;margin-right:40px'> ",NAME,"</b><hr style='margin:5px'>",
                                      "<table style='font-size:1.2em; width:220px'>",
                                      "<tr><td><b>Unemployment Rate:</b></td><td>  ",unemp_rate,"%</td><tr>",

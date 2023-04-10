@@ -1,6 +1,6 @@
 library(shiny)
 library(leaflet)
-library(rgdal)
+library(geojsonio)
 library(raster)
 library(RColorBrewer)
 library(dplyr)
