@@ -36,6 +36,6 @@ shinyUI(navbarPage("Leaflet Tutorial",id="nav",
   ),
 #### LEAFLET TUTORIAL
   tabPanel("Tutorial",
-         HTML("<iframe src='/Leaflet-in-R.html' width='100%' height='800px' frameborder='0'>")    
+         HTML("<iframe src='Leaflet-in-R.html' width='100%' height='800px' frameborder='0'>")    
   )
 ))

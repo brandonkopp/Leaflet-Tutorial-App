@@ -1,7 +1,7 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
@@ -333,7 +333,7 @@ leaflet(bikeshare, width="100%", height="400px") %>%
 
 ## Putting It All Together
 
-I wanted to close by giving you the whole process in one place. I added features to this map like including both a hover and a popup, extensivly formatting the popup, and making use of the highlighting options. 
+I wanted to close by giving you the whole process in one place. I added features to this map like including both a hover and a popup, extensively formatting the popup, and making use of the highlighting options. 
 
 ```{r echo=TRUE}
 dat <- geojson_read("./data/md_county_geojson.geojson", what="sp")
@@ -345,7 +345,7 @@ hover <-  with(dat@data,paste(sep = "",
                            "<b>Average Weekly Wage:</b>  $",avg_wkly_wage))
 
 popup <-  with(dat@data,paste(sep = "",
-                "<img src='https://brandonkopp.com/wp-content/uploads/2017/10/BLS_emblem_2016.png' style='vertical-align: text-bottom; height:30px'>",
+                "<img src='https://www.bls.gov/images/bls_emblem_2016.png' style='vertical-align: text-bottom; height:30px'>",
                 "<b style='font-size:2em;line-height:45px;margin-left:5px'> ",NAME,"</b>",
                 "<hr style='margin:5px'>",
                 "<table style='font-size:1.2em; width:250px'>",
